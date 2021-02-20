@@ -1,0 +1,65 @@
+{{define "page"}}
+{{template "header" .}}
+{{template "navbar" .}}
+<div class="container">
+    <h1>
+        {{.Meta.Title}}
+        {{if .Meta.SubTitle}}
+        <small>{{.Meta.SubTitle}}</small>
+        {{end}}
+    </h1>
+    {{template "cloud" .}}
+    <hr>
+    {{.Meta.Content}}
+    {{template "breadcrumbs" .}}
+</div>
+{{template "footer" .}}
+{{end}}
+
+{{define "tag"}}
+{{template "header" .}}
+{{template "navbar" .}}
+<div class="container">
+    <h1>Tagged &ldquo;{{.Meta.TagState.CurrentTag.RawName}}&rdquo;</h1>
+    <hr>
+    <ul>
+        {{range .Meta.TagState.CurrentTag.TaggedFiles}}
+        <li><a href="/{{.Path}}">{{.Meta.Title}}</a></li>
+        {{end}}
+    </ul>
+    {{template "breadcrumbs" .}}
+</div>
+{{template "footer" .}}
+{{end}}
+
+{{define "tags"}}
+{{template "header" .}}
+{{template "navbar" .}}
+<div class="container">
+    <h1>Tags</h1>
+    <hr>
+    <ul>
+        {{range .Meta.TagState.TagsByCount}}
+        <li><a href="/{{.IndexFile.Path}}">{{.RawName}}</a> ({{len .TaggedFiles}})</li>
+        {{end}}
+    </ul>
+    {{template "breadcrumbs" .}}
+</div>
+{{template "footer" .}}
+{{end}}
+
+{{define "index"}}
+{{template "header" .}}
+{{template "navbar" .}}
+<div class="container">
+    <h1>Index of /{{.Dir}}</h1>
+    <ul class="list-unstyled">
+        {{range .Meta.Files}}
+        {{if .IsDir}}<strong>{{end}}
+            <li><a href="/{{.Path}}">{{.Name}}</a></li>
+            {{if .IsDir}}</strong>{{end}}
+        {{end}}
+    </ul>
+</div>
+{{template "footer" .}}
+{{end}}

@@ -1,0 +1,36 @@
+{{define "header"}}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/main.css">
+        {{if .Meta.Title}}
+        <title>Goldsmith Sample - {{.Meta.Title}}</title>
+        {{else if eq .Meta.Layout "tag"}}
+        <title>Goldsmith Sample - Tagged "{{.Meta.TagState.CurrentTag.RawName}}"</title>
+        {{else if eq .Meta.Layout "index"}}
+        <title>Goldsmith Sample - Index of /{{.Dir}}</title>
+        {{end}}
+    </head>
+    <body>
+{{end}}
+
+{{define "navbar"}}
+<nav>
+    <div class="topnavigation" id="topnavigation">
+        <div class="navbar-nav">
+            {{$area := .Meta.Area}}
+            <a class="nav-item nav-link {{if $area}}{{if eq $area "home"}}active{{end}}{{end}}" href="/">Home</a>
+            <a class="nav-item nav-link {{if $area}}{{if eq $area "portfolio"}}active{{end}}{{end}}" href="/portfolio/">Portfolio</a>
+            <a class="nav-item nav-link {{if $area}}{{if eq $area "projects"}}active{{end}}{{end}}" href="/projects/">Projects</a>
+            <a class="nav-item nav-link {{if $area}}{{if eq $area "tags"}}active{{end}}{{end}}" href="/tags/">Tags</a>
+        </div>
+    </div>
+</nav>
+{{end}}
+
+{{define "footer"}}
+    </body>
+</html>
+{{end}}

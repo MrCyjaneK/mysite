@@ -1,0 +1,12 @@
+{{define "cloud"}}
+{{if .Meta.TagState.CurrentTags}}
+<div>
+    <span class="badge badge-date">{{.Meta.Date}}</span><br />
+    {{range .Meta.TagState.CurrentTags}}
+        <a class="badge badge-secondary" href="/{{.IndexFile.Path}}">{{.RawName}}</a>
+    {{end}}
+    <br />
+
+</div>
+{{end}}
+{{end}}
