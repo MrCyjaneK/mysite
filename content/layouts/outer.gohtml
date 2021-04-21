@@ -4,33 +4,47 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/lib/tether/css/tether.min.css">
+        <link rel="stylesheet" href="/lib/tether/css/tether-theme-basic.min.css">
+        <link rel="stylesheet" href="/lib/lightbox/ekko-lightbox.min.css">
         <link rel="stylesheet" href="/main.css">
         {{if .Meta.Title}}
-        <title>Goldsmith Sample - {{.Meta.Title}}</title>
+        <title>mrcyjanek.net - {{.Meta.Title}}</title>
         {{else if eq .Meta.Layout "tag"}}
-        <title>Goldsmith Sample - Tagged "{{.Meta.TagState.CurrentTag.RawName}}"</title>
+        <title>mrcyjanek.net - Tagged "{{.Meta.TagState.CurrentTag.RawName}}"</title>
         {{else if eq .Meta.Layout "index"}}
-        <title>Goldsmith Sample - Index of /{{.Dir}}</title>
+        <title>mrcyjanek.net - Index of /{{.Dir}}</title>
         {{end}}
     </head>
     <body>
 {{end}}
 
 {{define "navbar"}}
-<nav>
-    <div class="topnavigation" id="topnavigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/">mrcyjanek.net</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             {{$area := .Meta.Area}}
-            <a class="nav-item nav-link {{if $area}}{{if eq $area "home"}}active{{end}}{{end}}" href="/">Home</a>
-            <a class="nav-item nav-link {{if $area}}{{if eq $area "portfolio"}}active{{end}}{{end}}" href="/portfolio/">Portfolio</a>
+            <a class="nav-item nav-link {{if $area}}{{if eq $area "blog"}}active{{end}}{{end}}" href="/">Blog</a>
+            <a class="nav-item nav-link {{if $area}}{{if eq $area "me"}}active{{end}}{{end}}" href="/me/">Me</a>
             <a class="nav-item nav-link {{if $area}}{{if eq $area "projects"}}active{{end}}{{end}}" href="/projects/">Projects</a>
             <a class="nav-item nav-link {{if $area}}{{if eq $area "tags"}}active{{end}}{{end}}" href="/tags/">Tags</a>
         </div>
     </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 </nav>
 {{end}}
 
 {{define "footer"}}
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/tether/js/tether.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/lib/lightbox/ekko-lightbox.min.js"></script>
+    <script src="/main.js"></script>
+
     </body>
 </html>
 {{end}}

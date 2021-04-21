@@ -2,6 +2,12 @@
 {{template "header" .}}
 {{template "navbar" .}}
 <div class="container">
+    {{template "cloud" .}}
+    {{.Meta.Content}}
+    {{template "breadcrumbs" .}}
+</div>
+{{template "footer" .}}
+<div class="container">
     {{range .Meta.Groups.Blog}}
     <div>
         <h2><a href="{{.Path}}">{{.Meta.Title}}</a></h2>

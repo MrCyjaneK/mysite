@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"log"
 
 	"github.com/FooSoft/goldsmith"
@@ -71,9 +70,7 @@ func (b *builder) Build(contentDir, buildDir, cacheDir string) {
 }
 
 func main() {
-	fmt.Println("http://127.0.0.1:8080/")
 	port := flag.Int("port", 8080, "server port")
 	flag.Parse()
-
 	devserver.DevServe(new(builder), *port, "content", "build", "cache")
 }
