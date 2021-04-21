@@ -2,7 +2,10 @@ package main
 
 import (
 	"flag"
+	"io/ioutil"
 	"log"
+	"net/http"
+	"os"
 
 	"github.com/FooSoft/goldsmith"
 	"github.com/FooSoft/goldsmith-components/devserver"
@@ -70,7 +73,41 @@ func (b *builder) Build(contentDir, buildDir, cacheDir string) {
 }
 
 func main() {
+	// Updating readme's
+	downloadReadme("https://git.mrcyjanek.net/mrcyjanek/btnet/raw/branch/master/README.md", "content/projects/btnet/index.md", `[ "btnet", "projects", "FOSS" ]`, "BTnet - Using BitTorrent to serve websites.")
+	downloadReadme("https://git.mrcyjanek.net/mrcyjanek/jwapi/raw/branch/master/README.md", "content/projects/jwapi/index.md", `[ "jwapi", "FOSS" ]`, "JWAPI - Golang library, and JW Library FOSS replacement.")
+	downloadReadme("https://git.mrcyjanek.net/mrcyjanek/simple-tor-file-server/raw/branch/master/README.md", "content/projects/simple-tor-file-server/index.md", `[ "TOR", "FOSS" ]`, "Simple Tor File Server - Minimal OnionShare replacement")
+	downloadReadme("https://git.mrcyjanek.net/mrcyjanek/userbot.php/raw/branch/master/README.md", "content/projects/userbot_php/index.md", `[ "PHP", "Telegram", "FOSS" ]`, "userbot.php - Badly written Telegram Userbot using Madeline Proto")
 	port := flag.Int("port", 8080, "server port")
 	flag.Parse()
 	devserver.DevServe(new(builder), *port, "content", "build", "cache")
+}
+
+func downloadReadme(url string, target string, tags string, title string) {
+	resp, err := http.Get(url)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer resp.Body.Close()
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		log.Fatal(err)
+	}
+	file, err := os.Create(target)
+	if err != nil {
+		log.Fatal(err)
+	}
+	file.WriteString(`+++
+Area = "portfolio"
+CrumbParent = "portfolio"
+Layout = "page"
+Tags = ` + tags + `
+Title = "` + title + `"
++++
+
+`)
+	_, err = file.Write(body)
+	if err != nil {
+		log.Fatal(err)
+	}
 }

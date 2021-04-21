@@ -25,7 +25,10 @@ This site is generated using [this program](https://git.mrcyjanek.net/mrcyjanek/
 | ![Tor](/static/icons/torproject-icon.svg)         | I also know a bit about TOR, I don't like the way it works (I don't like the exit nodes, and the whole _trusted authority nodes_), but at least it works... I run a few hidden services. That are hidden, thus no links. |
 | ![MySQL](/static/icons/mysql-icon.svg)            | I'm using MySQL for the most of my projects, It's nice and fast. I know how to optimize things, but I'm not the best in it, mostly because I use SQLite for local development, and most of the fance features are gone. But SQL is nice, and I'm good in it. | 
 | <img alt="BitTorrent" src="/static/icons/libre-brand-bittorrent.svg" width="64px"> | Hell yeah! I love this one seeding without ratio limits on public trackers, and working on the [BTnet](/tags/btnet/), using BitTorrent to show you websites. |
+
 If you think that I can work for you, feel free to dm me, links are below.
+
+-------------
 
 ## Contact Me
 
