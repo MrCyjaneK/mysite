@@ -78,9 +78,13 @@ func main() {
 	downloadReadme("https://git.mrcyjanek.net/mrcyjanek/jwapi/raw/branch/master/README.md", "content/projects/jwapi/index.md", `[ "jwapi", "FOSS" ]`, "JWAPI - Golang library, and JW Library FOSS replacement.")
 	downloadReadme("https://git.mrcyjanek.net/mrcyjanek/simple-tor-file-server/raw/branch/master/README.md", "content/projects/simple-tor-file-server/index.md", `[ "TOR", "FOSS" ]`, "Simple Tor File Server - Minimal OnionShare replacement")
 	downloadReadme("https://git.mrcyjanek.net/mrcyjanek/userbot.php/raw/branch/master/README.md", "content/projects/userbot_php/index.md", `[ "PHP", "Telegram", "FOSS" ]`, "userbot.php - Badly written Telegram Userbot using Madeline Proto")
-	port := flag.Int("port", 8080, "server port")
+	port := flag.Int("port", 0, "server port")
 	flag.Parse()
-	devserver.DevServe(new(builder), *port, "content", "build", "cache")
+	if *port == 0 {
+		new(builder).Build("content", "build", "cache")
+	} else {
+		devserver.DevServe(new(builder), *port, "content", "build", "cache")
+	}
 }
 
 func downloadReadme(url string, target string, tags string, title string) {
