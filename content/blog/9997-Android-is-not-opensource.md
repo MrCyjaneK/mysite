@@ -8,7 +8,7 @@ Tags = [ "BTnet" ]
 
 Android is not open source, and can we, please, stop pretending that it is?
 
-# Android is not open source
+# [2021.04.22] Android is not open source
 
 What come in your mind when you think _OpenSource_? I see Richard Stallman, DFSG, and hundreds of merge requests and issues, where people discuss what should happen with the project, what should be done, and what shouldn't. How does it look like in android?
 
