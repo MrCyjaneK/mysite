@@ -3,7 +3,7 @@ Title = "[2021.04.22] Android is not open source."
 Layout = "page"
 Collection = "Blog"
 CrumbParent = "blog"
-Tags = [ "BTnet" ]
+Tags = [ "Andorid", "Google", "FOSS" ]
 +++
 
 Android is not open source, and can we, please, stop pretending that it is?
