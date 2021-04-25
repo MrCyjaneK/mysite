@@ -7,6 +7,8 @@ Title = "Blog"
 
 # Czarek Nakamoto
 
+> !!! Web server under maintenance, will be back at end of monday (at least partialy.)
+
 Hey hey hello! I'm Czarek, I'm doing stuff in my free time, sometimes. Feel free to check my blog (below), and [projects](/projects/).
 
 This site is generated using [this program](https://git.mrcyjanek.net/mrcyjanek/mysite), if you have found some issue on it, feel free to submit a merge request.
