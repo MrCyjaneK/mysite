@@ -36,7 +36,7 @@ If you think that I can work for you, feel free to dm me, links are below.
 
 [![Matrix](/static/icons/matrix-icon.svg)](https://matrix.to/#/@cyjan:mrcyjanek.net)
 [![Telegram](/static/icons/telegram-icon.svg)](https://t.me/mrcyjanek)
-[![E-mail](/static/icons/mailgun-icon.svg)](mailto:mrcyjanek.net)
+[![E-mail](/static/icons/mailgun-icon.svg)](mailto:cyjan@mrcyjanek.net)
 
 # Blog
 
