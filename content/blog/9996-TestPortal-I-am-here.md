@@ -12,7 +12,7 @@ As you may have seen, recently I've made a [little hack for testportal called Te
 
 But that's not what I want to talk about. I want to talk about why that kind of things are a **must** nowadays. It's because of the Teachers. There are many cases when I don't use my script and I won't name any examples, but it's much ducking easier to answer a question when you can read it slowly, read the possible answers, think for a moment, and you are done! That's all I need. And that's all I want to have. Do you know how annoying it is to see a damn timer counting down 15 minutes, afer damn second, that's stressing the shit out of me, because I know that I have 40 questions in ths test. I **know** that 15 \* 60 / 40 is 22.5
 
-22.5 Second for a question. I KNOW THAT! I know that ever question consist of at least 4 possible answers, from which each is a sentece, and question include quotation.
+22.5 Seconds for a question. I KNOW THAT! I know that every question consist of at least 4 possible answers, from which each is a sentece, and question include quotation.
 
 I know that 22.5 divided by 4 is 5.625, and duck the question, I have 5 seconds for each answer to read, that leaves no space for thinking. And while on some tests that's just enough, or more than enough, because you are good in some particular subject, but in some you are simply average. And it's fine, you don't need to be the best in everything.
 
