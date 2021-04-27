@@ -83,10 +83,8 @@ func main() {
 	downloadReadme("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/README.md", "content/projects/testportal-multitool/index.md", `[ "TestPortal", "Hack" ]`, "TestPortal MultiTool - Hack your exams like a boss")
 	downloadReadme("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/README.pl.md", "content/projects/testportal-multitool/README.pl.md", `[ "TestPortal", "Hack" ]`, "[PL] TestPortal MultiTool - Hack your exams like a boss")
 	downloadReadme("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/README.en.md", "content/projects/testportal-multitool/README.en.md", `[ "TestPortal", "Hack" ]`, "[EN] TestPortal MultiTool - Hack your exams like a boss")
-	//            flags
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/flags/pl.svg", "content/projects/testportal-multitool/static/flags/pl.svg")
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/flags/us.svg", "content/projects/testportal-multitool/static/flags/us.svg")
-	//            screenshots
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/screenshots/6-plus-9-x.png", "content/projects/testportal-multitool/static/screenshots/6-plus-9-x.png")
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/screenshots/100leg.jpeg", "content/projects/testportal-multitool/static/screenshots/100leg.jpeg")
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/screenshots/bruh-you-cant-screenshot-time.png", "content/projects/testportal-multitool/static/screenshots/bruh-you-cant-screenshot-time.png")
@@ -97,6 +95,7 @@ func main() {
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/screenshots/pada-pada-i-padl.png", "content/projects/testportal-multitool/static/screenshots/pada-pada-i-padl.png")
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/screenshots/polikarp-have-you-talk-to-the-other-death.png", "content/projects/testportal-multitool/static/screenshots/polikarp-have-you-talk-to-the-other-death.png")
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/screenshots/senpai-im-honest.png", "content/projects/testportal-multitool/static/screenshots/senpai-im-honest.png")
+	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/firefox.svg", "content/projects/testportal-multitool/static/firefox.svg")
 	log.Println("Starting...")
 	port := flag.Int("port", 0, "server port")
 	flag.Parse()
