@@ -96,6 +96,7 @@ func main() {
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/screenshots/polikarp-have-you-talk-to-the-other-death.png", "content/projects/testportal-multitool/static/screenshots/polikarp-have-you-talk-to-the-other-death.png")
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/screenshots/senpai-im-honest.png", "content/projects/testportal-multitool/static/screenshots/senpai-im-honest.png")
 	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/firefox.svg", "content/projects/testportal-multitool/static/firefox.svg")
+	downloadFile("https://git.mrcyjanek.net/mrcyjanek/testportal-multitool/raw/branch/main/static/javascript.svg", "content/projects/testportal-multitool/static/javascript.svg")
 	log.Println("Starting...")
 	port := flag.Int("port", 0, "server port")
 	flag.Parse()
