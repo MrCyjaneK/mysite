@@ -12,9 +12,13 @@ Squizit is a simple tool, that aim to help you get the grade you want, not the o
 
 [![Build Status](https://ci.mrcyjanek.net/badge/build-squizit.svg)](https://ci.mrcyjanek.net/jobs/build-squizit)
 
-Downloads, you can find .apk, .click, .exe and debs there
+# Screenshots
 
-  - https://static.mrcyjanek.net/laminarci/build-squizit/latest/
+| First, input PIN | Then enjoy! |
+| ---------------- | ----------- |
+| ![Fill me senpai](https://mrcyjanek.net/projects/squizit/static/input-pin.png) | ![Here it comes](https://mrcyjanek.net/projects/squizit/static/answers.png) |
+
+# Downloads
 
 | ![Android](/static/icons/android-icon.svg) | ![Ubuntu Touch](/static/icons/ubuntu-icon.svg) | ![Micro$oft Windows](/static/icons/microsoft-icon.svg) | ![Debian/Ubuntu Package](/static/icons/debian-icon.svg) |
 | --- | --- | --- | --- |
