@@ -1,45 +1,90 @@
+:root {
+  --primary-color: #0790db;
+  --secondary-color: #0570ca;
+  --bg-color: #2b2d33;
+  --fg-color: #fff;
+}
+
 body {
-    padding-top: 5rem;
-    background-color: #2b2d37;
-    color: white;
+  padding-top: 5rem;
+
+  color: var(--fg-color);
+  background-color: var(--bg-color);
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-h1 small, h2 small {
-    white-space: nowrap;
+h1 small,
+h2 small {
+  white-space: nowrap;
 }
 
 .img-thumbnail-inline {
-    display: inline-block;
+  display: inline-block;
 }
 
 :target:before {
-    content: "";
-    display: block;
-    height: 5rem;
-    margin: -5rem 0 0;
+  content: "";
+  display: block;
+  height: 5rem;
+  margin: -5rem 0 0;
 }
 
 .breadcrumb {
-    background-color: #ffffff30;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.breadcrumb-item {
-    color: white;
+table {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin: 1.5rem 0;
 }
 
-.breadcrumb-item.active {
-    color: chartreuse;
+table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.thead-my {
-    background-color: #2364;
+table th,
+table td {
+  padding: 1rem 1.5rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+table thead > :first-child > *:not(:empty) {
+  background-color: var(--primary-color);
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+table thead > :first-child > *:empty {
+  padding: 0;
+  margin: 0;
+  height: 0;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
 }
 
 .navbar {
-    background-color: #00000011 !important;
-    backdrop-filter: blur(4px);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none !important;
+  padding: 0.6rem;
+
+  background-color: #222429f0 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+@supports (backdrop-filter: blur(3px)) {
+  .navbar {
+    background-color: #22242980 !important;
+    backdrop-filter: blur(3px);
+  }
 }
