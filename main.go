@@ -25,7 +25,6 @@ import (
 )
 
 func fixup(doc *goquery.Document) error {
-	doc.Find("blockquote").AddClass("blockquote")
 	doc.Find("img[src*='thumb']").Each(func(i int, s *goquery.Selection) {
 		thumbLink := s.ParentFiltered("a")
 		thumbLink.AddClass("img-thumbnail", "img-thumbnail-inline")
