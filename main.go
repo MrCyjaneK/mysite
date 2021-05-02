@@ -127,8 +127,8 @@ func downloadReadme(url string, target string, tags string, title string) {
 		log.Fatal(err)
 	}
 	file.WriteString(`+++
-Area = "portfolio"
-CrumbParent = "portfolio"
+Area = "projects"
+CrumbParent = "projects"
 Layout = "page"
 Tags = ` + tags + `
 Title = "` + title + `"

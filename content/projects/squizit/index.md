@@ -1,6 +1,6 @@
 +++
-Area = "portfolio"
-CrumbParent = "portfolio"
+Area = "projects"
+CrumbParent = "projects"
 Layout = "page"
 Tags = [ "Quizizz", "Squizit" ]
 Title = "Squizit - Quizizz hack"

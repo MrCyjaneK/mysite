@@ -1,6 +1,6 @@
 +++
-Area = "portfolio"
-CrumbParent = "portfolio"
+Area = "projects"
+CrumbParent = "projects"
 Layout = "page"
 Tags = [ "jwapi", "FOSS" ]
 Title = "JWAPI - Golang library, and JW Library FOSS replacement."

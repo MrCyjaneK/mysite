@@ -1,6 +1,6 @@
 +++
-Area = "portfolio"
-CrumbParent = "portfolio"
+Area = "projects"
+CrumbParent = "projects"
 Layout = "page"
 Tags = [ "TOR", "FOSS" ]
 Title = "Simple Tor File Server - Minimal OnionShare replacement"

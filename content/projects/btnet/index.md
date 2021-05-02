@@ -1,6 +1,6 @@
 +++
-Area = "portfolio"
-CrumbParent = "portfolio"
+Area = "projects"
+CrumbParent = "projects"
 Layout = "page"
 Tags = [ "btnet", "projects", "FOSS" ]
 Title = "BTnet - Using BitTorrent to serve websites."

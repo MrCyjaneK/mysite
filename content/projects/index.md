@@ -1,9 +1,9 @@
 +++
-Area = "portfolio"
-CrumbName = "portfolio"
+Area = "projects"
+CrumbName = "projects"
 CrumbParent = "blog"
 Layout = "page"
-Title = "Portfolio"
+Title = "Projects"
 +++
 
 # My projects
