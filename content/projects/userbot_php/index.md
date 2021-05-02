@@ -3,7 +3,7 @@ Area = "projects"
 CrumbParent = "projects"
 Layout = "page"
 Tags = [ "PHP", "Telegram", "FOSS" ]
-Title = "userbot.php - Badly written Telegram Userbot using Madeline Proto"
+PostTitle = "userbot.php - Badly written Telegram Userbot using Madeline Proto"
 +++
 
 # userbot.php

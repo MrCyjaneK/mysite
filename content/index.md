@@ -2,7 +2,7 @@
 Area = "blog"
 CrumbName = "blog"
 Layout = "collection"
-Title = "Blog"
+PostTitle = "Blog"
 +++
 
 # Czarek Nakamoto

@@ -3,7 +3,7 @@ Area = "projects"
 CrumbParent = "projects"
 Layout = "page"
 Tags = [ "TOR", "FOSS" ]
-Title = "Simple Tor File Server - Minimal OnionShare replacement"
+PostTitle = "Simple Tor File Server - Minimal OnionShare replacement"
 +++
 
 # Simple Tor File Server

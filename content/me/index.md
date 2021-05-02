@@ -3,13 +3,10 @@ Area = "me"
 CrumbName = "me"
 CrumbParent = "blog"
 Layout = "page"
-Title = "Me"
+PostTitle = "Who is Czarek Nakamoto?"
 +++
 
-# Who is Czarek Nakamoto?
-
-
-## What do I know?
+## My experience
 
 | Thing                                             | And what have I done with it. |
 | ------------------------------------------------- | ----------------------------- |

@@ -92,3 +92,16 @@ a:hover {
     backdrop-filter: blur(3px);
   }
 }
+
+pre {
+  font-family: monospace;
+  color: white;
+}
+
+th {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}

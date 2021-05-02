@@ -3,7 +3,7 @@ Area = "projects"
 CrumbParent = "projects"
 Layout = "page"
 Tags = [ "TestPortal", "Hack" ]
-Title = "[EN] TestPortal MultiTool - Hack your exams like a boss"
+PostTitle = "[EN] TestPortal MultiTool - Hack your exams like a boss"
 +++
 
 # [EN] TestPortal MultiTool

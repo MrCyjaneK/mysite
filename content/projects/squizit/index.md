@@ -3,10 +3,8 @@ Area = "projects"
 CrumbParent = "projects"
 Layout = "page"
 Tags = [ "Quizizz", "Squizit" ]
-Title = "Squizit - Quizizz hack"
+PostTitle = "Squizit - Simple hack for quizizz, that just works."
 +++
-
-# Squizit - Simple hack for quizizz, that just works.
 
 Squizit is a simple tool, that aim to help you get the grade you want, not the one you have learnt for.
 

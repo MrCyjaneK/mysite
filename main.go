@@ -131,7 +131,7 @@ Area = "projects"
 CrumbParent = "projects"
 Layout = "page"
 Tags = ` + tags + `
-Title = "` + title + `"
+PostTitle = "` + title + `"
 +++
 
 `)
