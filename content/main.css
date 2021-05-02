@@ -58,10 +58,10 @@ table thead > :first-child > *:not(:empty) {
 }
 
 table thead > :first-child > *:empty {
-    padding: 0;
-    margin: 0;
-    height: 0;
-} 
+  padding: 0;
+  margin: 0;
+  height: 0;
+}
 
 a {
   color: var(--primary-color);
@@ -71,21 +71,20 @@ a:hover {
   color: var(--secondary-color);
 }
 
-
 .navbar {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: none !important;
-    padding: 0.6rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: none !important;
+  padding: 0.6rem;
 
-    background-color: #222429F0 !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: #222429f0 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
 @supports (backdrop-filter: blur(3px)) {
-    .navbar {
-        background-color: #22242980 !important;
-        backdrop-filter: blur(3px);
-    }
+  .navbar {
+    background-color: #22242980 !important;
+    backdrop-filter: blur(3px);
+  }
 }
