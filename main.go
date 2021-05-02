@@ -32,6 +32,9 @@ func fixup(doc *goquery.Document) error {
 		thumbLink.SetAttr("data-toggle", "lightbox")
 		thumbLink.SetAttr("data-gallery", "gallery")
 	})
+	doc.Find("img[src*='/static/icons']").Each(func(i int, s *goquery.Selection) {
+		s.AddClass("img-icons")
+	})
 
 	return nil
 }
