@@ -39,8 +39,7 @@ Currently received: 0 eur
 
 ----------------------------------------------
 
-<iframe data-aa="1623831" src="//acceptable.a-ads.com/1623831?size=Adaptive&background_color=2b2d37" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
-<iframe data-aa="1623833" src="//acceptable.a-ads.com/1623833?size=Adaptive&background_color=2b2d37" scrolling="no" style="border:0px; padding:0; width:100%; height:100%; overflow:hidden" allowtransparency="true"></iframe>
+
 <script>
 let a = document.getElementsByTagName('a')
 for (i in a) {

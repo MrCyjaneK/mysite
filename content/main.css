@@ -38,3 +38,8 @@ h1 small, h2 small {
 .thead-my {
     background-color: #2364;
 }
+
+.navbar {
+    background-color: #00000011 !important;
+    backdrop-filter: blur(4px);
+}

@@ -1,0 +1,50 @@
+{
+    "ads": [
+        "<iframe data-aa=\"1623831\" src=\"//acceptable.a-ads.com/1623831?size=Adaptive&background_color=2b2d37\" scrolling=\"no\" style=\"border:0px; padding:0; width:100%; height:100%; overflow:hidden\" allowtransparency=\"true\"></iframe>",
+        "<iframe data-aa=\"1623833\" src=\"//acceptable.a-ads.com/1623833?size=Adaptive&background_color=2b2d37\" scrolling=\"no\" style=\"border:0px; padding:0; width:100%; height:100%; overflow:hidden\" allowtransparency=\"true\"></iframe>"
+    ],
+    "info": "Currently my setup costs 15 euro monthly. Let's have a deal. If I get 15euro, before so 15.05.2021, the ch3@t will continue to exist.<script>console.log('Hello from info.json')</script>",
+    "address": [
+        {
+            "name": "Bitcoin",
+            "icon": "https://mrcyjanek.net/static/icons/bitcoin-icon.svg",
+            "href": "bitcoin:bc1qvyukpkg4d8wshwr0x6cy572uw4m8s5fkhdwkwd"
+        },
+        {
+            "name": "Litecoin",
+            "icon": "https://mrcyjanek.net/static/icons/litecoin-icon.svg",
+            "href": "litecoin:MDXTRScy5VkRpDZ63MmhuwTu2VT1QbWZJd"
+        },
+        {
+            "name": "Dogecoin",
+            "icon": "https://mrcyjanek.net/static/icons/dogecoin-icon.svg",
+            "href": "dogecoin:DEtVeAh2p7z7mfvvJzfYHRs6UxccsuHzPd"
+        },
+        {
+            "name": "Monero",
+            "icon": "https://mrcyjanek.net/static/icons/getmonero-icon.svg",
+            "href": "monero:843pFub5sGZMJaiXZybmCQErUNjrGhRYpRxYr924Ptig4VGs7Gc9eG1fe29f3UrdY8B19ez66tJ6659tKPmSVRWmPM6ByWL"
+        },
+        {
+            "name": "PayPal",
+            "icon": "https://mrcyjanek.net/static/icons/paypal-logo.svg",
+            "href": "https://www.paypal.com/pools/c/8uwPFuGOG1"
+        }
+    ],
+    "donates": {
+        "donators": [
+            {
+                "name": "demo",
+                "amount": 3.14,
+                "note": "***** ***"
+            },
+            {
+                "name": "demo2",
+                "amount": 3.15,
+                "note": "***** ***2"
+            }
+        ],
+        "amount": 6.29,
+        "target": 15
+    }
+}
