@@ -22,6 +22,7 @@ Initially this page contained all the informations about me, but there's so much
 [![Matrix](/static/icons/matrix-icon.svg)](https://matrix.to/#/@cyjan:mrcyjanek.net)
 [![Telegram](/static/icons/telegram-icon.svg)](https://t.me/mrcyjanek)
 [![E-mail](/static/icons/mailgun-icon.svg)](mailto:cyjan@mrcyjanek.net)
+[![Discord (@cyjanek#8892)](/static/icons/discordapp-tile.svg)](https://discordapp.com/users/688998644157775906)
 
 # Blog
 
