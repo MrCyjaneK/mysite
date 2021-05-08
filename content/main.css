@@ -93,9 +93,10 @@ a:hover {
   }
 }
 
-pre {
+pre,code {
   font-family: monospace;
   color: white;
+  background-color: #22242980 !important;
 }
 
 th {
