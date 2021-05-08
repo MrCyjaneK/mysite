@@ -2,7 +2,7 @@
 Area = "projects"
 CrumbParent = "projects"
 Layout = "page"
-Tags = [ "btnet", "projects", "FOSS" ]
+Tags = [ "btnet", "FOSS" ]
 PostTitle = "BTnet - Using BitTorrent to serve websites."
 +++
 
