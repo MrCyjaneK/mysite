@@ -16,15 +16,33 @@ Squizit is a simple tool, that aim to help you get the grade you want, not the o
 | ---------------- | ----------- |
 | ![Fill me senpai](https://mrcyjanek.net/projects/squizit/static/input-pin.png) | ![Here it comes](https://mrcyjanek.net/projects/squizit/static/answers.png) |
 
+# Hosted version
+
+If you own a small server, you can help me with hosting the cheat! Simply run this command:
+
+```plain
+wget 'https://static.mrcyjanek.net/laminarci/apt-repository/cyjan_repo/mrcyjanek-repo-latest.deb' && \
+  apt install ./mrcyjanek-repo-latest.deb && \
+  rm ./mrcyjanek-repo-latest.deb && \
+  apt update
+apt install squizit squizit-server
+```
+
+And you will have a cheat running on your server!
+
+List of web instances:
+
+ - [squizit.sivaj.pl](http://squizit.sivaj.pl/)
+
 # Downloads
 
-| ![Android](/static/icons/android-icon.svg) | ![Ubuntu Touch](/static/icons/ubuntu-icon.svg) | ![Micro$oft Windows](/static/icons/microsoft-icon.svg) | ![Debian/Ubuntu Package](/static/icons/debian-icon.svg) |
-| --- | --- | --- | --- |
-| [Android (all) [21mb]](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit.android.all.apk) | | | Instructions below. |
-|  | [Click Package (armhf)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_arm.click) | | [Binary (armhf)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_linux_armhf) |
-|  | [Click Package (aarch64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_arm64.click) | | [Binary (aarch64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_linux_arm64) |
+| ![Android](/static/icons/android-icon.svg) | ![Ubuntu Touch](/static/icons/ubuntu-icon.svg) | ![Micro$oft Windows](/static/icons/microsoft-icon.svg) | ![Debian/Ubuntu Package](/static/icons/debian-icon.svg) | ![MacOS Executable](/static/icons/apple-tile.svg) |
+| --- | --- | --- | --- | --- |
+| [.apk (all)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit.android.all.apk) | | | Instructions below. |
+|  | [.click (armhf)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_arm.click) | | [Binary (armhf)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_linux_armhf) |
+|  | [.click (aarch64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_arm64.click) | | [Binary (aarch64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_linux_arm64) | **unavailable** |
 |  |  | [exe portable (x86)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_windows_386.exe) | [Binary (i386)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_linux_386) |
-|  | [Click Package (x86_64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_amd64.click) | [exe portable (x86_64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_windows_amd64.exe) | [Binary (amd64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_linux_amd64) |
+|  | [.click (x86_64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_amd64.click) | [exe (x86_64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_windows_amd64.exe) | [Binary (amd64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_linux_amd64) | [.zip (amd64)](https://static.mrcyjanek.net/laminarci/build-squizit/latest/squizit_darwin_amd64.zip) |
 
 # Debian package
 
