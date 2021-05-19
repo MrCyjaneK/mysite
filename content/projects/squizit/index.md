@@ -18,10 +18,46 @@ Squizit is a simple tool, that aim to help you get the grade you want, not the o
 
 # Hosted version
 
-List of web instances:
+List of web instances [Host your own!](#host-on-your-site).
 
- - [squizit.sivaj.pl](http://squizit.sivaj.pl/)
- - [squizit.cf](https://squizit.cf)
+<!--
+  Add new instances to the bottom of this list.
+-->
+ - [squizit.sivaj.pl](https://squizit.sivaj.pl/) <span id="squizitsivajpl"></span>
+ - [squizit.cf](https://squizit.cf) <span id="squizitcf"></span>
+ - [beta.squizit.cf](https://beta.squizit.cf/) <span id="betasquizitcf"></span>
+ - Backend Server <span id="backend"></span>
+ - Downloads Server <span id="downloads"></span>
+
+Do you want your site to get added here? Submit a pull request to [git.mrcyjanek.net](https://git.mrcyjanek.net/mrcyjanek/mysite) or [github.com](https://github.com/MrCyjaneK/mysite)
+
+<script>
+function updateVersion(url, name) {
+  let started = new Date().getTime();
+  fetch(url+"/api/version")
+    .then(r => r.text())
+    .then(r => {
+      let ended = new Date().getTime();
+      let ms = Number(ended - started).toFixed(0);
+      document.getElementById(name).innerHTML = "<span style=\"color: green;\">online <span style=\"color: yellow;\">["+ms+" ms]</span></span> "+r.substr(0,32).replaceAll(/&/g, "&amp;")
+      .replaceAll(/</g, "&lt;")
+      .replaceAll(/>/g, "&gt;")
+      .replaceAll(/"/g, "&quot;")
+      .replaceAll(/'/g, "&#039;")
+    })
+    .catch(e => {
+      console.log(e.toString())
+      let ended = new Date().getTime();
+      let ms = Number(ended - started).toFixed(0);
+      document.getElementById(name).innerHTML = "<span title=\""+e.toString().replaceAll('"', '')+"\" style=\"color: red;\">offline <span style=\"color: yellow;\">["+ms+" ms]</span> <b onclick=\"alert('"+e.toString().replaceAll('"', '')+"')\" style=\"color: white\">[?]</b></span>"
+    })
+}
+setTimeout(() => updateVersion("https://squizit.sivaj.pl", "squizitsivajpl"))
+setTimeout(() => updateVersion("https://squizit.cf", "squizitcf"))
+setTimeout(() => updateVersion("https://beta.squizit.cf", "betasquizitcf"))
+setTimeout(() => updateVersion("https://squiz.mrcyjanek.net", "backend"))
+setTimeout(() => updateVersion("https://static.mrcyjanek.net", "downloads"))
+</script>
 
 # Downloads
 
@@ -53,7 +89,6 @@ Then install squizit
 ```
 
 # Host on your site
-
 
 If you own a small server, you can help me with hosting the cheat! Simply run this command:
 
