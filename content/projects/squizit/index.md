@@ -18,7 +18,7 @@ Squizit is a simple tool, that aim to help you get the grade you want, not the o
 
 # Hosted version
 
-List of web instances [Host your own!](#host-on-your-site).
+List of web instances [Host your own!](#host-on-your-site)
 
 <!--
   Add new instances to the bottom of this list.
