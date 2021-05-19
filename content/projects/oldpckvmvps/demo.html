@@ -1,0 +1,98 @@
+<!doctype html>
+<title>Debian-pure</title>
+
+<script src="https://static.mrcyjanek.net/laminarci/build-v86/latest/libv86.js"></script>
+<script>
+"use strict";
+
+window.onload = function()
+{
+    var emulator = new V86Starter({
+        wasm_path: "https://static.mrcyjanek.net/laminarci/build-v86/latest/v86.wasm",
+        memory_size: 512 * 1024 * 1024,
+        vga_memory_size: 8 * 1024 * 1024,
+        screen_container: document.getElementById("screen_container"),
+        bios: {
+            url: "https://static.mrcyjanek.net/laminarci/build-v86/latest/seabios.bin",
+        },
+        vga_bios: {
+            url: "https://static.mrcyjanek.net/laminarci/build-v86/latest/vgabios.bin",
+        },
+        filesystem: {
+            baseurl: "https://static.mrcyjanek.net/laminarci/v86/debian-pure/debian-9p-rootfs-flat/",
+            basefs: "https://static.mrcyjanek.net/laminarci/v86/debian-pure/debian-base-fs.json",
+        },
+        //initial_state: {
+        //    url: "https://static.mrcyjanek.net/laminarci/v86-manual/manual-state.bin.zst", 
+        //},
+        network_relay_url: "wss://relay.widgetry.org/",
+        autostart: false,
+        cmdline: "rw init=/bin/systemd root=host9p console=ttyS0 spectre_v2=off pti=off",
+        bzimage_initrd_from_filesystem: true
+    });
+    var oReq = new XMLHttpRequest();
+    oReq.open("GET", "https://static.mrcyjanek.net/laminarci/v86-manual/manual-state.bin", true);
+    oReq.responseType = "arraybuffer";
+    oReq.setRequestHeader("Pragma", "");
+    oReq.onload = function (oEvent) {
+        var arrayBuffer = oReq.response; // Note: not oReq.responseText
+        if (arrayBuffer) {
+            var byteArray = new Uint8Array(arrayBuffer);
+            emulator.stop();
+            emulator.restore_state(byteArray);
+            emulator.run();
+        };
+    }
+    oReq.send(null);
+    document.getElementById("save_file").onclick = function()
+    {
+        emulator.save_state(function(error, new_state)
+        {
+            if(error)
+            {
+                throw error;
+            }
+
+            var a = document.createElement("a");
+            a.download = "v86state.bin";
+            a.href = window.URL.createObjectURL(new Blob([new_state]));
+            a.dataset.downloadurl = "application/octet-stream:" + a.download + ":" + a.href;
+            a.click();
+        });
+
+        this.blur();
+    };
+
+    document.getElementById("restore_file").onchange = function()
+    {
+        if(this.files.length)
+        {
+            var filereader = new FileReader();
+            emulator.stop();
+
+            filereader.onload = function(e)
+            {
+                emulator.restore_state(e.target.result);
+                emulator.run();
+            };
+
+            filereader.readAsArrayBuffer(this.files[0]);
+
+            this.value = "";
+        }
+
+        this.blur();
+    };
+    
+
+};
+</script>
+<input id="save_file" type="button" value="Backup Content">
+Restore Content <input id="restore_file" type="file">
+<hr>
+<p>Booting may take some time, if you want to speedup this process <a href="https://static.mrcyjanek.net/laminarci/v86-manual/manual-state.bin">Download booted snapshot</a> (<a href="https://static.mrcyjanek.net/laminarci/v86-manual/manual-state.bin.zst">.zst</a>)</p>
+<!-- A minimal structure for the ScreenAdapter defined in browser/screen.js -->
+<div id="screen_container">
+    <div style="white-space: pre; font: 14px monospace; line-height: 14px"></div>
+    <canvas style="display: none"></canvas>
+</div>
