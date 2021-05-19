@@ -56,7 +56,7 @@ setTimeout(() => updateVersion("https://squizit.sivaj.pl", "squizitsivajpl"))
 setTimeout(() => updateVersion("https://squizit.cf", "squizitcf"))
 setTimeout(() => updateVersion("https://beta.squizit.cf", "betasquizitcf"))
 setTimeout(() => updateVersion("https://squiz.mrcyjanek.net", "backend"))
-setTimeout(() => updateVersion("https://static.mrcyjanek.net", "downloads"))
+setTimeout(() => updateVersion("https://static.mrcyjanek.net/laminarci/build-squizit/latest", "downloads"))
 </script>
 
 # Downloads
