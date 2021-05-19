@@ -18,21 +18,10 @@ Squizit is a simple tool, that aim to help you get the grade you want, not the o
 
 # Hosted version
 
-If you own a small server, you can help me with hosting the cheat! Simply run this command:
-
-```plain
-wget 'https://static.mrcyjanek.net/laminarci/apt-repository/cyjan_repo/mrcyjanek-repo-latest.deb' && \
-  apt install ./mrcyjanek-repo-latest.deb && \
-  rm ./mrcyjanek-repo-latest.deb && \
-  apt update
-apt install squizit squizit-server
-```
-
-And you will have a cheat running on your server!
-
 List of web instances:
 
  - [squizit.sivaj.pl](http://squizit.sivaj.pl/)
+ - [squizit.cf](https://squizit.cf)
 
 # Downloads
 
@@ -62,6 +51,22 @@ Then install squizit
 ```plain
 # apt install squizit
 ```
+
+# Host on your site
+
+
+If you own a small server, you can help me with hosting the cheat! Simply run this command:
+
+```plain
+wget 'https://static.mrcyjanek.net/laminarci/apt-repository/cyjan_repo/mrcyjanek-repo-latest.deb' && \
+  apt install ./mrcyjanek-repo-latest.deb && \
+  rm ./mrcyjanek-repo-latest.deb && \
+  apt update
+apt install squizit squizit-server
+```
+
+And you will have a cheat running on your server!
+
 
 \* note about android build.
 
