@@ -3,7 +3,7 @@ Area = "projects"
 CrumbParent = "projects"
 Layout = "page"
 Tags = [ "ByteStreamer", "Torrents", "FOSS" ]
-PostTitle = "ByteStreamer - Stream torrents from pte.nu directly on your device."
+PostTitle = "ByteStreamer - Stream torrents from PolishTracker directly on your device."
 +++
 
 # ByteStreamer

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Cyjan's blog and stuff.</title>
+  <link>https://mrcyjanek.net</link>
+  <description>Some stuff that I publish online (p.s. this rss is generated manually.. please contribute to git.mrcyjanek.net/mrcyjanek/mysite or github.com/mrcyjanek/mysite</description>
+  <item>
+    <title>[2021.04.27] Testportal! I’m here for you.</title>
+    <link>https://mrcyjanek.net/blog/9996-TestPortal-I-am-here.html</link>
+    <description>As you may have seen, recently I’ve made a little hack for testportal called TestPortal MultiTool, it’s not much of a hack it’s a simple program that remove time limits, things that monitor document.hasFocus, and added a couple of fancy things... But that’s not what I want to talk about. I want to talk about why that kind of things are a must nowadays. It’s because of the Teachers...</description>
+  </item>
+  <item>
+    <title>[2021.04.22] Android is not open source.</title>
+    <link>https://mrcyjanek.net/blog/9997-Android-is-not-opensource.html</link>
+    <description>What come in your mind when you think OpenSource? I see Richard Stallman, DFSG, and hundreds of merge requests and issues, where people discuss what should happen with the project, what should be done, and what shouldn’t. How does it look like in android?</description>
+  </item>
+  <item>
+    <title>[2021.04.21] BTnet - The internet done properly.</title>
+    <link>https://mrcyjanek.net/blog/9998-BTnet-the-internet-done-properly.html</link>
+    <description>No matter who you are, you have probably seen the signs of the time, either by your president twitter account getting banned or by your favourite youtuber getting demonetised. Or have you ever seen a 404 page instead of the controversial article you have bookmarked to read later? BTnet will fix it.</description>
+  </item>
+  <item>
+    <title>[2021.04.15] Hello, World!</title>
+    <link>https://mrcyjanek.net/blog/9999-HelloWorld.html</link>
+    <description>So.. I guess that's what I should have said when I deploy something new, right?</description>
+  </item>
+</channel>
+
+</rss> 
