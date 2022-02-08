@@ -38,4 +38,4 @@ Well, here you can see some of my recent projects
 | [memeapi](https://git.mrcyjanek.net/mrcyjanek/memeapi) | Simple meme api, to create memes. |
 | [CateCoin](https://github.com/catecoin-project/) | I used to have cryptocurrency btw. Dead because people want money for everything, meowing at Binance ceo have not resulted in listing :(. |
 
-Well, That's it. Back in the good old days, in 2018 I also had some smaller projects, Dogecoin powered minecraft server (Maybe I'll redo it with Monero and Minetest?), a couple of betting bots.
+Well, That's it. Back in the good old days, in 2018 I also had some smaller projects, Dogecoin powered minecraft server (Maybe I'll redo it with Monero and Minetest?), a couple of betting bots, I even had a casino in my tipping bot on telegram.
