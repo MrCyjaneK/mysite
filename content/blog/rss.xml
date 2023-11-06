@@ -6,6 +6,11 @@
   <link>https://mrcyjanek.net</link>
   <description>Some stuff that I publish online (p.s. this rss is generated manually.. please contribute to git.mrcyjanek.net/mrcyjanek/mysite or github.com/mrcyjanek/mysite</description>
   <item>
+    <title>[2023.11.06] Moving on.</title>
+    <link>https://mrcyjanek.net/blog/9996-moving-on.html</link>
+    <description>Life has been tough for past few years for me, nevertheless I'm almost back on the right track...</description>
+  </item>
+  <item>
     <title>[2021.04.27] Testportal! I’m here for you.</title>
     <link>https://mrcyjanek.net/blog/9996-TestPortal-I-am-here.html</link>
     <description>As you may have seen, recently I’ve made a little hack for testportal called TestPortal MultiTool, it’s not much of a hack it’s a simple program that remove time limits, things that monitor document.hasFocus, and added a couple of fancy things... But that’s not what I want to talk about. I want to talk about why that kind of things are a must nowadays. It’s because of the Teachers...</description>
