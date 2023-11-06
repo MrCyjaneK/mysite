@@ -1,9 +1,0 @@
-{{define "cloud"}}
-{{if .Meta.TagState.CurrentTags}}
-<div>
-    {{range .Meta.TagState.CurrentTags}}
-    <a class="badge badge-secondary" href="/{{.IndexFile.Path}}">{{.RawName}}</a>
-    {{end}}
-</div>
-{{end}}
-{{end}}
