@@ -7,9 +7,8 @@ date: 2023-11-06 00:00:00+0000
 categories:
     - General
 tags:
-    - Web
-    - Security
-    - School
+    - General
+    - Personal
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
