@@ -38,9 +38,10 @@ Then, let's check if the account is already created, and if not create it (gener
 
 ```go
 if !pi.IsAccountReady() {
-    pi.Create("Group Host", "no@no.no", 4096)
+    pi.Create("Group Host", "no@no.no", 4096) // last parameter is key bitsize
 }
 ```
+
 
 And we are done :), now let's handle some user messages, let's say we want to reply to the message `Ping` with `Pong`
 
