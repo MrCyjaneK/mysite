@@ -93,15 +93,15 @@ Task:
 1. Core functionality
     1. [x] Running and configuring embedded i2p router.
     2. [x] Client handshake (Ensuring proper key exchange, showing fingerprint to both users to verify that the contact was properly added).
-    3. ~~[ ] Edit the flutter's PGP library to add missing functionality~~ This task no longer apply, we have moved (at least for now) this logic to Golang code
-    4. [ ] Event exchange (Ensuring that each event is delivered, grouping events by destination) _Partialy done, we do exchange events. I'll consiter this step done when relays arrive_
-    5. ~~[ ] Combining all possible events into a Dart library (This includes creating the events and designing how they should look like - so we can ensure efficient and easy to implement way of exchanging them.)~~ This step also doesn't apply. But we do have Golang version of this, still partialy WIP.
+    3. [ ] ~~Edit the flutter's PGP library to add missing functionality~~ This task no longer applies, we have moved (at least for now) this logic to Golang code
+    4. [ ] Event exchange (Ensuring that each event is delivered, grouping events by destination) _Partially done, we do exchange events. I'll consider this step done when the relays arrive_
+    5. [ ] ~~Combining all possible events into a Dart library (This includes creating the events and designing how they should look - so we can ensure an efficient and easy-to-implement way of exchanging them.)~~ This step also doesn't apply. But we do have a Golang version of this, still partially WIP.
     6. [ ] Documenting the changes
-    7. [ ] Creating an automatized build-process to ensure users can make their own versions
+    7. [ ] Creating an automatized build process to ensure users can make their own versions
     8. [ ] Bot API with libraries for Golang and Python/JavaScript
     9. [ ] Creating a group server in Golang (using the above library)
 2. User Interface
-    1. [ ] Initial UI release - support all features of backend library
+    1. [ ] Initial UI release - support all features of the backend library
     2. [ ] UI polishing – including better desktop support.
 3. Beta Release
     1. [ ] Android
