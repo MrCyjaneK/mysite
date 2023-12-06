@@ -81,7 +81,7 @@ I think that the API is pretty straightforward to use.
 
 P3pgroup is a Golang server for hosting groups, as I've already mentioned in the previous blog post, groups are basically one-to-one chats that relay messages to all members.
 
-This group server will be a module (that later will be included in p3pch4t), that will allow you to host groups easily, either by running a daemon on some server or by using a hosted solution. While there are some privacy concerns (group server being able to read all messages) as long as you trust your group operator you are fine
+This group server will be a module (that later will be included in p3pch4t), that will allow you to host groups easily, either by running a daemon on some server, by using a hosted solution or by using p3pgroup embedded in p3pch4t. While there are some privacy concerns (group server being able to read all messages) as long as you trust your group operator you are fine
 
 > NOTE: I also plan to make an `encryptFor` optional field when introducing, this way we will encrypt for multiple destinations at once - and we can skip encrypting for group server entirely, but this is not something that is on this or next week's roadmap.
 
@@ -179,7 +179,7 @@ Also, the next updates will occur more regularly (assuming that from the first c
 
 --------
 
-Project state as of 2023.11.29
+Project state as of 2023.12.06
 
 
 Task:
