@@ -121,6 +121,9 @@ All we need to list the new app is this little metadata file and a .png banner t
  - Runs the build command
  - Moves the resulting .xdc, source tarball, and `banner` to a target directory
 
+
+That's it, then the user is provided with a nice `meta.json` file that contains all information about all apps (except for images), so with a tiny caching this is just perfect to run under the pretty unstable i2p network with as high UX as it is reasonably possible.
+
 ```json
 {
     "apps": {
@@ -150,7 +153,7 @@ All we need to list the new app is this little metadata file and a .png banner t
     }
 }
 ```
-That's it, then the user is provided with a nice `meta.json` file that contains all information about all apps (except for images), so with a tiny caching this is just perfect to run under the pretty unstable i2p network with as high UX as it is reasonably possible. What does it look like? Let me quickly grab .apk from [download mirror](https://static.mrcyjanek.net/p3pch4t/latest/p3pch4t-release/) and show you some screenshots.
+What does it look like? Let me quickly grab .apk from [download mirror](https://static.mrcyjanek.net/p3pch4t/latest/p3pch4t-release/) and show you some screenshots.
 
 |     |     |     |
 | --- | --- | --- | 
@@ -174,9 +177,7 @@ Also, [some of the hardcoded values are now configurable](https://git.mrcyjanek.
 
 ## What's the plan?
 
-Next on my roadmap is to work on some of the WebXDC apps, bring WebXDC support to the desktop and other exotic platforms (currently it is only on Android), and add support for Matterbridge, to get some testing done. In a few months from now, I plan to move at least parts of my communication to p3pch4t, either by bridges or by forcing people to use my chat app :p, and by porting the app to all platforms I can find.
-
-Also, the next updates will occur more regularly (assuming that from the first commit to this day almost 10 months have passed).
+Groups.
 
 --------
 
