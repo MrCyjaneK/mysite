@@ -1,5 +1,5 @@
 ---
-title: Linux subsystem for Windows
+title: Linux Subsystem for Windows
 description: Since when does Linux have less compatibility than other inferior OSes? Why is there no LSW somewhere?
 slug: linux-subsystem-for-windows
 date: 2023-12-20 00:00:00+0000
@@ -15,7 +15,7 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 # LSW - running Windows, the Linux way in docker (on Linux).
 
-Linux (Windows) subsystem for Windows (for Linux)
+Linux (Windows) Subsystem for Windows (for Linux)
 
 > Also, am I the only person who thinks that a better name (for the competing product, WSL) would be _Linux subsystem for Windows_?
 
