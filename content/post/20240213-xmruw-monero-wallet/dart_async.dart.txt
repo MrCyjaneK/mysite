@@ -1,0 +1,53 @@
+import 'dart:async';
+
+void main() async {
+  await loop(1e3.toInt());
+  await loop(1e6.toInt());
+}
+int sc = 100;
+Future<void> loop(int iter) async {
+  List<int> asyncResult = [];
+  List<int> futureResult = [];
+  List<int> syncResult = [];
+  for (var j = 0; j < sc; j++) {
+  // Async
+  var sw1 = new Stopwatch()..start();
+  num count1 = 0;
+  for (var i = 0; i < iter; i++) {
+    count1 += await foo();
+  }
+  asyncResult.add(sw1.elapsedMicroseconds);
+
+  // Future
+  var sw2 = new Stopwatch()..start();
+  num count2 = 0;
+  for (var i = 0; i < iter; i++) {
+    await foo().then((_) {
+      count2 += _;
+      if (i == iter-1) {
+        futureResult.add(sw2.elapsedMicroseconds);
+      }
+    });
+  }
+
+  // sync
+  var sw3 = new Stopwatch()..start();
+  num count3 = 0;
+  for (var i = 0; i < iter; i++) {
+    count3 += bar();
+  }
+  syncResult.add(sw3.elapsedMicroseconds);
+  }
+  print("-- $iter (avg of $sc)");
+  print('async : ${asyncResult.reduce((a, b) => a+b) / asyncResult.length / 1000}ms');
+  print('future: ${futureResult.reduce((a, b) => a+b) / futureResult.length / 1000}ms');
+  print('sync  : ${syncResult.reduce((a, b) => a+b) / syncResult.length / 1000}ms');
+}
+
+Future<num> foo() async {
+  return 1;
+}
+
+num bar() {
+  return 1;
+}
