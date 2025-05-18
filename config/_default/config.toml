@@ -1,7 +1,9 @@
 # Change baseurl before deploy
 baseurl = "https://mrcyjanek.net"
 languageCode = "en-us"
-paginate = 5
+# paginate = 5
+[pagination]
+pagerSize = 5
 title = "Cyjan's Site"
 
 # Theme i18n support

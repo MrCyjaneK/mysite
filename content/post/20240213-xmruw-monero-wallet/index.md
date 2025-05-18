@@ -8,10 +8,9 @@ categories:
     - Projects
 tags:
     - xmruw
+    - moneroc
 weight: 1
 ---
-
-# Unnamed Monero Wallet
 
 Thousands of lines of code, months of work, a couple of programming languages, failed rewrite... and we have it - a simple, cross-platform, and easy-to-use monero wallet.
 
